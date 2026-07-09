@@ -2,14 +2,14 @@
 export const PLANS = {
   starter: {
     id: 'starter', name: 'Starter', price: 'Free', badge: '🪡',
-    logsPerDay: 1, historyDays: 30, maxOutfits: 10, maxContacts: 20,
-    features: ['1 outfit log per day','30-day history','Up to 10 outfits','Up to 20 contacts','Repeat alerts'],
+    logsPerDay: 2, historyDays: 30, maxOutfits: 10, maxContacts: 20,
+    features: ['2 outfit log per day','30-day history','Up to 10 outfits','Up to 20 contacts','Repeat alerts'],
     missing:  ['Multiple logs per day','90-day+ history','Unlimited wardrobe','Advanced analytics'],
   },
   professional: {
     id: 'professional', name: 'Professional', price: '₹499/mo', badge: '🧵',
-    logsPerDay: 3, historyDays: 90, maxOutfits: 50, maxContacts: 999,
-    features: ['3 outfit logs per day','90-day history','Up to 50 outfits','Unlimited contacts','Repeat alerts','History export'],
+    logsPerDay: 5, historyDays: 90, maxOutfits: 50, maxContacts: 999,
+    features: ['5 outfit logs per day','90-day history','Up to 50 outfits','Unlimited contacts','Repeat alerts','History export'],
     missing:  ['Unlimited daily logs','365-day history','Unlimited wardrobe'],
   },
   executive: {
