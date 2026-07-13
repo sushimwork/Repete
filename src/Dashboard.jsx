@@ -298,7 +298,7 @@ export function Dashboard({ user, profile, onLogout, onPlanChange }) {
                   </div>
                   {atLogLimit
                     ? <div style={{ fontSize:'11px', color:'#e05252', marginTop:6, display:'flex', alignItems:'center', gap:6 }}>
-                        <Ico.Lock/> Limit reached —&nbsp;
+                        <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Limit reached —&nbsp;
                         <span style={{ color:'#b8975a', cursor:'pointer', fontWeight:500 }} onClick={() => setShowUpgrade(true)}>
                           upgrade for more logs
                         </span>
@@ -317,7 +317,7 @@ export function Dashboard({ user, profile, onLogout, onPlanChange }) {
                   <span className="card-t">Today's meetings</span>
                   <button className="btn btn-ghost btn-sm"
                     onClick={() => { if (atLogLimit) { setShowUpgrade(true); return } resetLog(); setLogModal(true) }}>
-                    {atLogLimit ? <><Ico.Lock/>Limit reached</> : <>+ Log outfit</>}
+                    {atLogLimit ? <><svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Limit reached</> : <>+ Log outfit</>}
                   </button>
                 </div>
                 <div className="card-b">
@@ -390,12 +390,12 @@ export function Dashboard({ user, profile, onLogout, onPlanChange }) {
                 <div className="ps">{wardrobe.length}{plan.maxOutfits !== Infinity ? `/${plan.maxOutfits}` : ''} outfits</div>
               </div>
               <button className="btn btn-dark" onClick={() => { if (atWardrobeLimit) { setShowUpgrade(true); return } setAddOutfit(true) }}>
-                {atWardrobeLimit ? <><Ico.Lock/>Limit reached</> : <><Ico.Plus/>Add outfit</>}
+                {atWardrobeLimit ? <><svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Limit reached</> : <><Ico.Plus/>Add outfit</>}
               </button>
             </div>
             {atWardrobeLimit && (
               <div className="alert a-lock" onClick={() => setShowUpgrade(true)} style={{ marginBottom:16 }}>
-                <Ico.Lock/>Wardrobe limit for {plan.name} plan reached. <strong style={{ marginLeft:4 }}>Upgrade to add more →</strong>
+                <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Wardrobe limit for {plan.name} plan reached. <strong style={{ marginLeft:4 }}>Upgrade to add more →</strong>
               </div>
             )}
             <div className="wg">
@@ -425,12 +425,12 @@ export function Dashboard({ user, profile, onLogout, onPlanChange }) {
                 <div className="ps">{contacts.length}{plan.maxContacts !== Infinity ? `/${plan.maxContacts}` : ''} contacts</div>
               </div>
               <button className="btn btn-dark" onClick={() => { if (atContactLimit) { setShowUpgrade(true); return } setAddContact(true) }}>
-                {atContactLimit ? <><Ico.Lock/>Limit reached</> : <><Ico.Plus/>Add contact</>}
+                {atContactLimit ? <><svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Limit reached</> : <><Ico.Plus/>Add contact</>}
               </button>
             </div>
             {atContactLimit && (
               <div className="alert a-lock" onClick={() => setShowUpgrade(true)} style={{ marginBottom:16 }}>
-                <Ico.Lock/>Contact limit reached. <strong style={{ marginLeft:4 }}>Upgrade to track more →</strong>
+                <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Contact limit reached. <strong style={{ marginLeft:4 }}>Upgrade to track more →</strong>
               </div>
             )}
             <div className="card">
