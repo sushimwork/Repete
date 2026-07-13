@@ -163,6 +163,7 @@ input,button,select,textarea{font-family:inherit}
 .add-tile{border:2px dashed #ddd;border-radius:10px;height:208px;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;transition:all .15s;color:#ccc;gap:6px;font-size:12px}
 .add-tile:hover{border-color:#b8975a;color:#b8975a}
 .locked-tile{border:2px dashed #e8d5f5;border-radius:10px;height:208px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#c4a0e8;gap:6px;font-size:12px;background:#faf7ff;cursor:pointer}
+.locked-tile svg{width:18px !important;height:18px !important}
 
 .tbl{width:100%;border-collapse:collapse}
 .tbl th{text-align:left;font-size:10px;font-weight:500;color:#aaa;text-transform:uppercase;letter-spacing:.07em;padding:0 0 10px;border-bottom:1px solid #f0ede8}
