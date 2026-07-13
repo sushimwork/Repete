@@ -162,7 +162,7 @@ input,button,select,textarea{font-family:inherit}
 .w-meta{font-size:11px;color:#aaa}.w-uses{font-size:11px;color:#b8975a;margin-top:3px;font-weight:500}
 .add-tile{border:2px dashed #ddd;border-radius:10px;height:208px;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;transition:all .15s;color:#ccc;gap:6px;font-size:12px}
 .add-tile:hover{border-color:#b8975a;color:#b8975a}
-.locked-tile{border:2px dashed #e8d5f5;border-radius:10px;height:208px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#c4a0e8;gap:6px;font-size:12px;background:#faf7ff;cursor:pointer}
+.locked-tile{border:2px dashed #e8d5f5;border-radius:10px;height:100px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#c4a0e8;gap:6px;font-size:12px;background:#faf7ff;cursor:pointer}
 .locked-tile svg{width:18px !important;height:18px !important}
 
 .tbl{width:100%;border-collapse:collapse}
